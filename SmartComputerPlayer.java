@@ -1,38 +1,30 @@
 import java.util.Random;
 
-/**
- * A smart computer player that tries to make the best moves in the game.
- * Uses some simple strategy to either win, block the opponent, or pick the best spot.
- */
+// smart computer player na may strategy sa move
+// extends Player class
 public class SmartComputerPlayer extends Player {
     private Random random;
 
+    // constructor, set name at symbol ng player
     public SmartComputerPlayer(String name, char symbol) {
         super(name, symbol);
         this.random = new Random();
     }
 
-    /**
-     * This is where the computer decides its move.
-     * Strategy:
-     * 1. Try to win if possible.
-     * 2. Block the opponent from winning.
-     * 3. Take the center if it's free.
-     * 4. Take a corner if available.
-     * 5. Pick any other open spot as a last resort.
-     */
+    // override makeMove, gamit ang strategic moves
+    // strategy: 1. win kung puwede, 2. block opponent, 3. take center, 4. take corner, 5. random
     @Override
     public int[] makeMove(Board board) {
         System.out.println(getName() + " is thinking strategically...");
         try {
-            Thread.sleep(1000); // pause para kunyare nag-iisip
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }
 
         int[] move;
 
-        // Look for a winning move first
+        // try to win
         move = findWinningMove(board, getSymbol());
         if (move != null) {
             System.out.println(getName() + " is going for the win!");
@@ -40,22 +32,22 @@ public class SmartComputerPlayer extends Player {
             return move;
         }
 
-        // If can't win, i-block yung kalaban
+        // block opponent
         char opponentSymbol = (getSymbol() == 'X') ? 'O' : 'X';
         move = findWinningMove(board, opponentSymbol);
         if (move != null) {
-            System.out.println(getName() + " is blocking the opponent!");
+            System.out.println(getName() + " is blocking opponent!");
             System.out.println(getName() + " chose: Row " + (move[0] + 1) + ", Column " + (move[1] + 1));
             return move;
         }
 
-        // Take the center if it’s free
+        // take center kung libre
         if (board.isCellEmpty(1, 1)) {
             System.out.println(getName() + " chose: Row 2, Column 2 (Center)");
             return new int[]{1, 1};
         }
 
-        // Otherwise, take any corner that's free
+        // take corner kung libre
         int[][] corners = {{0, 0}, {0, 2}, {2, 0}, {2, 2}};
         for (int[] corner : corners) {
             if (board.isCellEmpty(corner[0], corner[1])) {
@@ -64,7 +56,7 @@ public class SmartComputerPlayer extends Player {
             }
         }
 
-        // If nothing else, just pick the first empty spot
+        // take any available cell
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (board.isCellEmpty(i, j)) {
@@ -74,26 +66,17 @@ public class SmartComputerPlayer extends Player {
             }
         }
 
-        return null;
+        return null; // hindi dapat ma-reach
     }
 
-    /**
-     * Looks for a move that would let 'symbol' win.
-     * Returns the [row, col] if it exists, otherwise null.
-     */
+    // hanapin kung may winning move para sa given symbol
     private int[] findWinningMove(Board board, char symbol) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (board.isCellEmpty(i, j)) {
-                    // Temporarily make the move
-                    board.makeMove(i, j, symbol);
-                    
-                    // See if this leads to a win
+                    board.setCell(i, j, symbol);
                     boolean isWin = checkWinForSymbol(board, symbol);
-                    
-                    // Undo the move
-                    board.makeMove(i, j, ' ');
-                    
+                    board.setCell(i, j, ' '); // undo move
                     if (isWin) {
                         return new int[]{i, j};
                     }
@@ -103,11 +86,9 @@ public class SmartComputerPlayer extends Player {
         return null;
     }
 
-    /**
-     * Checks if the given symbol has a winning line on the board.
-     */
+    // check kung panalo na yung given symbol
     private boolean checkWinForSymbol(Board board, char symbol) {
-        // Check rows and columns
+        // check rows at columns
         for (int i = 0; i < 3; i++) {
             if ((board.getCell(i, 0) == symbol && board.getCell(i, 1) == symbol && board.getCell(i, 2) == symbol) ||
                 (board.getCell(0, i) == symbol && board.getCell(1, i) == symbol && board.getCell(2, i) == symbol)) {
@@ -115,7 +96,7 @@ public class SmartComputerPlayer extends Player {
             }
         }
 
-        // Check diagonals
+        // check diagonals
         if ((board.getCell(0, 0) == symbol && board.getCell(1, 1) == symbol && board.getCell(2, 2) == symbol) ||
             (board.getCell(0, 2) == symbol && board.getCell(1, 1) == symbol && board.getCell(2, 0) == symbol)) {
             return true;
