@@ -1,23 +1,17 @@
-/**
- * Represents the Tic-Tac-Toe game board.
- * Demonstrates encapsulation with private fields and public methods.
- */
+// Board class for Tic-Tac-Toe
+// handles the game grid
 public class Board {
     private static final int BOARD_SIZE = 3;
     private static final char EMPTY_CELL = ' ';
     private char[][] grid;
 
-    /**
-     * Constructor initializes an empty board
-     */
+    // constructor, sets up an empty board
     public Board() {
         grid = new char[BOARD_SIZE][BOARD_SIZE];
         reset();
     }
 
-    /**
-     * re-reset yung board to empty state
-     */
+    // clear the board
     public void reset() {
         for (int i = 0; i < BOARD_SIZE; i++) {
             for (int j = 0; j < BOARD_SIZE; j++) {
@@ -26,35 +20,21 @@ public class Board {
         }
     }
 
-    /**
-     * Makes a move on the board
-     * @param row The row index (0-2)
-     * @param col The column index (0-2)
-     * @param symbol The player's symbol
-     * @return true if move was successful, false otherwise
-     */
+    // try to make a move, returns false if spot is invalid
     public boolean makeMove(int row, int col, char symbol) {
-        if (isCellEmpty(row, col)) {
+        if (row >= 0 && row < BOARD_SIZE && col >= 0 && col < BOARD_SIZE) {
             grid[row][col] = symbol;
             return true;
         }
         return false;
     }
 
-    /**
-     * Checks if a cell is empty
-     * @param row The row index
-     * @param col The column index
-     * @return true if empty, false otherwise
-     */
+    // check if a spot is empty
     public boolean isCellEmpty(int row, int col) {
         return grid[row][col] == EMPTY_CELL;
     }
 
-    /**
-     * Checks if yung board is completely filled
-     * @return true if full, false otherwise
-     */
+    // check if the board is full
     public boolean isFull() {
         for (int i = 0; i < BOARD_SIZE; i++) {
             for (int j = 0; j < BOARD_SIZE; j++) {
@@ -66,19 +46,19 @@ public class Board {
         return true;
     }
 
-    /**
-     * Gets the symbol at a specific cell
-     * @param row The row index
-     * @param col The column index
-     * @return The symbol at that position
-     */
+    // get what symbol is at a spot
     public char getCell(int row, int col) {
         return grid[row][col];
     }
 
-    /**
-     * Displays the current board state sa console
-     */
+    // set a spot to a symbol (useful for testing or AI moves)
+    public void setCell(int row, int col, char symbol) {
+        if (row >= 0 && row < BOARD_SIZE && col >= 0 && col < BOARD_SIZE) {
+            grid[row][col] = symbol;
+        }
+    }
+
+    // print the board to the console
     public void display() {
         System.out.println("\nCurrent Board:");
         System.out.println("  1   2   3");
