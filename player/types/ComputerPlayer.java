@@ -1,4 +1,8 @@
+package player.types;
 import java.util.Random;
+
+import game.Board;
+import player.Player;
 
 // computer player na random lang mag-move
 // extends Player class

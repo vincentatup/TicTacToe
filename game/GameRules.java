@@ -1,5 +1,7 @@
+package game;
 // interface para sa game rules
 // dito naka-define kung ano dapat gawin ng rules
+
 public interface GameRules {
 
     // check kung may nanalo na sa board

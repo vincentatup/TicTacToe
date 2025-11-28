@@ -1,4 +1,8 @@
+package player.types;
 import java.util.Scanner;
+
+import game.Board;
+import player.Player;
 
 // human player na nag-iinput ng moves sa console
 // extends Player class

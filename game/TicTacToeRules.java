@@ -1,5 +1,7 @@
+package game;
 // rules ng Tic-Tac-Toe game
 // dito nakalagay lahat ng logic kung paano mananalo o kung valid ang move
+
 public class TicTacToeRules implements GameRules {
 
     // tinitingnan kung may panalo sa board

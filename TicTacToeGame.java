@@ -1,4 +1,11 @@
 import java.util.Scanner;
+
+import game.Game;
+import player.Player;
+import player.types.ComputerPlayer;
+import player.types.HumanPlayer;
+import player.types.SmartComputerPlayer;
+
 import java.util.InputMismatchException;
 
 // main class at entry point ng Tic-Tac-Toe game

@@ -1,3 +1,4 @@
+package game;
 // Board class for Tic-Tac-Toe
 // handles the game grid
 public class Board {

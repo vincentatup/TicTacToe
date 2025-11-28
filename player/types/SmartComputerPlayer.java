@@ -1,4 +1,8 @@
+package player.types;
 import java.util.Random;
+
+import game.Board;
+import player.Player;
 
 // smart computer player na may strategy sa move
 // extends Player class

@@ -1,5 +1,9 @@
+package player;
 // abstract class para sa player
 // dito naka-hold yung name, symbol, at score
+
+import game.Board;
+
 public abstract class Player {
     private String name;
     private char symbol;

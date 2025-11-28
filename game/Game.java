@@ -1,4 +1,7 @@
+package game;
 import java.util.Scanner;
+
+import player.Player;
 
 // main game class, nag-handle ng game flow
 // uses Board, Player, and GameRules
