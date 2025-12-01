@@ -229,7 +229,7 @@ int[] move = currentPlayer.makeMove(board);
 
 ---
 
-### **4. Abstraction**�
+### **4. Abstraction**
 
 <details>
 <summary><b>Click to expand</b></summary>
@@ -286,15 +286,12 @@ TicTacToeGame/
  │   └── TicTacToeRules.java          #  Win/draw detection
  │
  ├── player/
- │   ├── Player.java                  #  Abstract base class
- │   └── types/
- │       ├── HumanPlayer.java         #  Console input player
- │       ├── ComputerPlayer.java      #  Random AI
- │       └── SmartComputerPlayer.java #  Strategic AI
- │
- └── utility/
-     ├── Scanner                      #  Input handling
-     └── Random                       #  Random generation
+     ├── Player.java                  #  Abstract base class
+     └── types/
+         ├── HumanPlayer.java         #  Console input player
+         ├── ComputerPlayer.java      #  Random AI
+         └── SmartComputerPlayer.java #  Strategic AI
+
 ```
 
 ### Class Descriptions
