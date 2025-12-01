@@ -25,23 +25,6 @@
 
 ---
 
-## Table of Contents
-
-- [Overview](#-overview)
-- [Features](#-features)
-- [OOP Concepts Used](#-oop-concepts-used)
-  - [Encapsulation](#1-encapsulation)
-  - [Inheritance](#2-inheritance)
-  - [Polymorphism](#3-polymorphism)
-  - [Abstraction](#4-abstraction)
-- [Program Structure](#-program-structure)
-- [How to Run](#-how-to-run)
-- [How to Play](#-how-to-play)
-- [Sample Output](#-sample-output)
-- [Acknowledgement](#-acknowledgement)
-
----
-
 ## Overview
 
 **Tic-Tac-Toe Game** is a Java-based console application that brings the classic two-player strategy game to life through object-oriented programming principles. Players compete on a 3×3 grid, taking turns to place their symbols (X or O) with the goal of aligning three marks horizontally, vertically, or diagonally.
@@ -61,7 +44,7 @@
 <tr>
 <td width="33%" align="center">
 
-### 🎮 Three Game Modes
+### Three Game Modes
 
 **Human vs Human**  
 Two players, one console
@@ -75,7 +58,7 @@ Battle strategic opponent
 </td>
 <td width="33%" align="center">
 
-### 🎯 Game Mechanics
+### Game Mechanics
 
 ✓ Interactive 3×3 grid  
 ✓ Turn-based gameplay  
@@ -87,7 +70,7 @@ Battle strategic opponent
 </td>
 <td width="33%" align="center">
 
-### 🤖 Player Types
+### Player Types
 
 **HumanPlayer**  
 Console input control
@@ -102,7 +85,7 @@ Strategic AI algorithm
 </tr>
 </table>
 
-### 🎲 Smart AI Strategy
+### Smart AI Strategy
 
 ```mermaid
 graph TD
