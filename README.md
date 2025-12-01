@@ -121,7 +121,7 @@ graph TD
 
 ## OOP Concepts Used
 
-### **1. Encapsulation** 🔒
+### **1. Encapsulation**
 
 <details>
 <summary><b>Click to expand</b></summary>
