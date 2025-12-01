@@ -1,4 +1,4 @@
-#  Tic-Tac-Toe Game: Java Console Edition
+#  Tic-Tac-Toe
 
 <div align="center">
 
