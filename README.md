@@ -397,7 +397,7 @@ java TicTacToeGame
 2. Add files to `src` folder
 3. Right-click → Run As → Java Application
 
-### 📝 Required Files
+### Required Files
 
 <table>
 <tr>
@@ -427,7 +427,7 @@ java TicTacToeGame
 
 ---
 
-## 🎮 How to Play
+## How to Play
 
 ### Step-by-Step Guide
 
@@ -529,9 +529,9 @@ Play again? (yes/no): _
 
 ---
 
-## 📸 Sample Output
+## Sample Output
 
-### 🎮 Game Start
+### Game Start
 
 ```
 ========================================
@@ -552,7 +552,7 @@ Enter Player 1 name: Alice
 Enter Player 2 name: Bob
 ```
 
-### 📋 Gameplay
+### Gameplay
 
 ```
 ========================================
@@ -629,7 +629,7 @@ Current Board:
 3   |   | O
 ```
 
-### 🏆 Victory Screen
+### Victory Screen
 
 ```
 ========================================
@@ -645,7 +645,7 @@ Bob: 0 win(s)
 Play again? (yes/no): yes
 ```
 
-### 🤖 Smart AI Example
+### Smart AI Example
 
 ```
 Enter your choice: 3
@@ -718,7 +718,7 @@ Current Board:
 3   |   |   
 ```
 
-### ❌ Error Handling
+### Error Handling
 
 ```
 Alice's turn (X)
