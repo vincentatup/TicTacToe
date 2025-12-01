@@ -8,7 +8,7 @@
 
 **A Java Console Game Demonstrating OOP Concepts**
 
-[Features](#features) • [Installation](#-how-to-run) • [How to Play](#-how-to-play) • [Documentation](#-oop-concepts-used)
+[Features](#-features) • [Installation](#-how-to-run) • [How to Play](#-how-to-play) • [Documentation](#-oop-concepts-used)
 
 ---
 
@@ -20,7 +20,6 @@
 👤 Silang, Owen Rainier 
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=flat&logo=github)](your-github-repo-link)
-[![License](https://img.shields.io/badge/License-Educational-yellow?style=flat)](LICENSE)
 
 </div>
 
