@@ -119,7 +119,7 @@ graph TD
 
 ---
 
-## 🧩 OOP Concepts Used
+## OOP Concepts Used
 
 ### **1. Encapsulation** 🔒
 
@@ -149,15 +149,15 @@ Encapsulation ensures data integrity by controlling access to the internal state
   ```
 
 #### Benefits:
-✅ Prevents unauthorized data manipulation  
-✅ Maintains game state integrity  
-✅ Enables validation logic in setters  
+ Prevents unauthorized data manipulation  
+ Maintains game state integrity  
+ Enables validation logic in setters  
 
 </details>
 
 ---
 
-### **2. Inheritance** 🌳
+### **2. Inheritance**
 
 <details>
 <summary><b>Click to expand</b></summary>
@@ -203,15 +203,15 @@ public class HumanPlayer extends Player {
 ```
 
 #### Benefits:
-✅ Code reuse across player types  
-✅ Consistent structure for all players  
-✅ Easy to add new player types  
+ Code reuse across player types  
+ Consistent structure for all players  
+ Easy to add new player types  
 
 </details>
 
 ---
 
-### **3. Polymorphism** 🔄
+### **3. Polymorphism**
 
 <details>
 <summary><b>Click to expand</b></summary>
@@ -238,15 +238,15 @@ int[] move = currentPlayer.makeMove(board);
 | SmartComputerPlayer | Strategic algorithm |
 
 #### Benefits:
-✅ Unified interface for all players  
-✅ Flexible game mode switching  
-✅ Clean, maintainable code  
+ Unified interface for all players  
+ Flexible game mode switching  
+ Clean, maintainable code  
 
 </details>
 
 ---
 
-### **4. Abstraction** 📦
+### **4. Abstraction**�
 
 <details>
 <summary><b>Click to expand</b></summary>
@@ -282,39 +282,39 @@ public class TicTacToeRules implements GameRules {
 ```
 
 #### Benefits:
-✅ Hides implementation complexity  
-✅ Focuses on "what" not "how"  
-✅ Clean separation of concerns  
+ Hides implementation complexity  
+ Focuses on "what" not "how"  
+ Clean separation of concerns  
 
 </details>
 
 ---
 
-## 📁 Program Structure
+## Program Structure
 
 ```
 TicTacToeGame/
- ├── TicTacToeGame.java              # 🚀 Entry point and main menu
+ ├── TicTacToeGame.java               #  Entry point and main menu
  │
  ├── game/
- │   ├── Game.java                   # 🎮 Game controller and flow
- │   ├── Board.java                  # 📋 3×3 grid management
- │   ├── GameRules.java              # 📜 Interface for game logic
- │   └── TicTacToeRules.java         # ✅ Win/draw detection
+ │   ├── Game.java                    #  Game controller and flow
+ │   ├── Board.java                   #  3×3 grid management
+ │   ├── GameRules.java               #  Interface for game logic
+ │   └── TicTacToeRules.java          #  Win/draw detection
  │
  ├── player/
- │   ├── Player.java                 # 👤 Abstract base class
+ │   ├── Player.java                  #  Abstract base class
  │   └── types/
- │       ├── HumanPlayer.java        # 🧑 Console input player
- │       ├── ComputerPlayer.java     # 🤖 Random AI
- │       └── SmartComputerPlayer.java# 🧠 Strategic AI
+ │       ├── HumanPlayer.java         #  Console input player
+ │       ├── ComputerPlayer.java      #  Random AI
+ │       └── SmartComputerPlayer.java #  Strategic AI
  │
  └── utility/
-     ├── Scanner                     # ⌨️ Input handling
-     └── Random                      # 🎲 Random generation
+     ├── Scanner                      #  Input handling
+     └── Random                       #  Random generation
 ```
 
-### 🔍 Class Descriptions
+### Class Descriptions
 
 <details>
 <summary><b>TicTacToeGame.java</b> - Main entry point</summary>
@@ -368,7 +368,7 @@ TicTacToeGame/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### Prerequisites
 
@@ -378,7 +378,7 @@ TicTacToeGame/
 
 </div>
 
-### 📥 Installation Steps
+### Installation Steps
 
 #### **Method 1: Command Line** (Recommended for Learning)
 
