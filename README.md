@@ -12,12 +12,12 @@
 
 ---
 
-### 📚 IT-2108 Project
+### IT-2108 Project
 
 **Created by:**  
 👤 Atup, Vincent Jamel S.
 👤 Panganiban, Francis Rafael T. 
-👤 Silang, Owen Rainier 
+👤 Silang, Owen Rainier A.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=flat&logo=github)](your-github-repo-link)
 
@@ -25,7 +25,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Features](#-features)
@@ -42,30 +42,20 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 **Tic-Tac-Toe Game** is a Java-based console application that brings the classic two-player strategy game to life through object-oriented programming principles. Players compete on a 3×3 grid, taking turns to place their symbols (X or O) with the goal of aligning three marks horizontally, vertically, or diagonally.
 
-<div align="center">
 
-| 🎮 Game Modes | 🤖 AI Levels | 📊 Features |
-|:---:|:---:|:---:|
-| 3 Modes | 2 AI Types | Score Tracking |
-| Human vs Human | Random AI | Input Validation |
-| Human vs Computer | Strategic AI | Play Again Option |
+### Game Objectives
 
-</div>
-
-### 🎯 Game Objectives
-
-- ✅ Align three symbols in a row (horizontal, vertical, or diagonal)
-- ✅ Block your opponent from winning
-- ✅ Survive 10 days without hitting 0 Health/Endurance... wait, wrong game! 😄
-- ✅ Win as many rounds as possible!
+-  Align three symbols in a row (horizontal, vertical, or diagonal)
+-  Block your opponent from winning
+-  Win as many rounds as possible!
 
 ---
 
-## ✨ Features
+## Features
 
 <table>
 <tr>
