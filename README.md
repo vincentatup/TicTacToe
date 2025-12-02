@@ -8,7 +8,7 @@
 
 **A Java Console Game Demonstrating OOP Concepts**
 
-[Features](#-features) • [Installation](#-how-to-run) • [How to Play](#-how-to-play) • [Documentation](#-oop-concepts-used)
+
 
 ---
 
