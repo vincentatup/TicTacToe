@@ -361,42 +361,20 @@ TicTacToeGame/
 
 ### Installation Steps
 
-#### **Method 1: Command Line** (Recommended for Learning)
 
 ```bash
-# 1. Create project folder
-mkdir TicTacToeGame
-cd TicTacToeGame
 
-# 2. Save all Java files in this folder
+# 1. Save all Java files
 git clone https://github.com/vincentatup/TicTacToe
 
-# 3. Compile all files
+# 2. Compile all files
 javac *.java
 
-# 4. Run the game
+# 3. Run the game
 java TicTacToeGame
 ```
 
-#### **Method 2: VS Code**
 
-1. Install "Extension Pack for Java"
-2. Open project folder
-3. Press `F5` to run
-4. Or right-click `TicTacToeGame.java` → Run
-
-#### **Method 3: IntelliJ IDEA**
-
-1. Create new Java project
-2. Add all 9 Java files
-3. Right-click `TicTacToeGame.java`
-4. Select "Run 'TicTacToeGame.main()'"
-
-#### **Method 4: Eclipse**
-
-1. Create new Java project
-2. Add files to `src` folder
-3. Right-click → Run As → Java Application
 
 ### Required Files
 
