@@ -436,8 +436,8 @@ Enter your choice: _
 ### 2️⃣ Choose Game Mode
 
 - **Option 1**: Play with a friend
-- **Option 2**: Practice against AI
-- **Option 3**: Challenge yourself
+- **Option 2**: Play against AI
+- **Option 3**: Challenge yourself with smart AI
 - **Option 4**: Exit game
 
 </td>
