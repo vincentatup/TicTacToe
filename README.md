@@ -482,11 +482,17 @@ Board coordinates:
 <td>
 
 ### 5️⃣ Win Conditions
+```
+Horizontal: X X X
 
-**Horizontal:** X X X  
-**Vertical:** X / X / X  
-**Diagonal:** X ╲ or ╱ X
+Vertical: X
+          X
+          X
 
+Diagonal: X                X
+            X     or     X
+              X        X
+```
 </td>
 <td>
 
@@ -714,5 +720,3 @@ Enter column (1-3): 1
 
 ✓ Move accepted!
 ```
-
----
