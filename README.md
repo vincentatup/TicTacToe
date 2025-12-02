@@ -47,25 +47,26 @@
 ### Three Game Modes
 
 **Human vs Human**  
-Two players, one console
+Two players using one console
 
 **Human vs Computer**  
-Challenge random AI
+Player vs. random-move AI
 
 **Human vs Smart AI**  
-Battle strategic opponent
+Player vs. strategic AI
 
 </td>
 <td width="33%" align="center">
 
 ### Game Mechanics
 
-✓ Interactive 3×3 grid  
-✓ Turn-based gameplay  
-✓ Win detection  
-✓ Draw detection  
-✓ Input validation  
-✓ Score tracking  
+1. Two players (X and O) take turns.
+2. Play on a 3×3 grid.
+3. Players choose an empty cell (1–9).
+4. Board updates with the chosen symbol (X or O).
+5. Check for 3 in a row (row, column, diagonal) to win.
+6. If all 9 cells are filled with no winner → draw.
+7. Game ends when someone wins or it's a draw.
 
 </td>
 <td width="33%" align="center">
@@ -73,13 +74,13 @@ Battle strategic opponent
 ### Player Types
 
 **HumanPlayer**  
-Console input control
+Takes input from the console
 
 **ComputerPlayer**  
-Random move generator
+Makes random valid moves
 
 **SmartComputerPlayer**  
-Strategic AI algorithm
+Uses a smart AI strategy to choose the best move.
 
 </td>
 </tr>
@@ -367,8 +368,8 @@ TicTacToeGame/
 mkdir TicTacToeGame
 cd TicTacToeGame
 
-# 2. Save all 9 Java files in this folder
-# (Copy code from artifacts above)
+# 2. Save all Java files in this folder
+git clone https://github.com/vincentatup/TicTacToe
 
 # 3. Compile all files
 javac *.java
@@ -403,23 +404,23 @@ java TicTacToeGame
 <tr>
 <td>
 
-✅ Player.java  
-✅ HumanPlayer.java  
-✅ ComputerPlayer.java  
+ Player.java  
+ HumanPlayer.java  
+ ComputerPlayer.java  
 
 </td>
 <td>
 
-✅ SmartComputerPlayer.java  
-✅ GameRules.java  
-✅ TicTacToeRules.java  
+ SmartComputerPlayer.java  
+ GameRules.java  
+ TicTacToeRules.java  
 
 </td>
 <td>
 
-✅ Board.java  
-✅ Game.java  
-✅ TicTacToeGame.java  
+ Board.java  
+ Game.java  
+ TicTacToeGame.java  
 
 </td>
 </tr>
