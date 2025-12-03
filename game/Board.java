@@ -1,12 +1,11 @@
 package game;
-// Board class for Tic-Tac-Toe
-// handles the game grid
+
 public class Board {
     private static final int BOARD_SIZE = 3;
     private static final char EMPTY_CELL = ' ';
     private char[][] grid;
 
-    // constructor, sets up an empty board
+    // sets up an empty board
     public Board() {
         grid = new char[BOARD_SIZE][BOARD_SIZE];
         reset();
@@ -30,7 +29,7 @@ public class Board {
         return false;
     }
 
-    // check if a spot is empty
+    // to check if the spot is empty
     public boolean isCellEmpty(int row, int col) {
         return grid[row][col] == EMPTY_CELL;
     }
@@ -47,19 +46,19 @@ public class Board {
         return true;
     }
 
-    // get what symbol is at a spot
+
     public char getCell(int row, int col) {
         return grid[row][col];
     }
 
-    // set a spot to a symbol (useful for testing or AI moves)
+    
     public void setCell(int row, int col, char symbol) {
         if (row >= 0 && row < BOARD_SIZE && col >= 0 && col < BOARD_SIZE) {
             grid[row][col] = symbol;
         }
     }
 
-    // print the board to the console
+   
     public void display() {
         System.out.println("\nCurrent Board:");
         System.out.println("  1   2   3");

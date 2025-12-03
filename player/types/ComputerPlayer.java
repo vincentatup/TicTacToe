@@ -4,12 +4,11 @@ import java.util.Random;
 import game.Board;
 import player.Player;
 
-// computer player na random lang mag-move
-// extends Player class
+
 public class ComputerPlayer extends Player {
     private Random random;
 
-    // constructor, set name at symbol ng player
+
     public ComputerPlayer(String name, char symbol) {
         super(name, symbol);
         this.random = new Random();
@@ -28,7 +27,7 @@ public class ComputerPlayer extends Player {
 
         System.out.println(getName() + " is thinking...");
         try {
-            Thread.sleep(1000); // konting pause para mukhang nag-iisip
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
         }

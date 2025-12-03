@@ -1,6 +1,5 @@
 package player;
-// abstract class para sa player
-// dito naka-hold yung name, symbol, at score
+
 
 import game.Board;
 
@@ -9,14 +8,14 @@ public abstract class Player {
     private char symbol;
     private int score;
 
-    // constructor, set name at symbol, score starts at 0
+    // constructor, set name at symbol
     public Player(String name, char symbol) {
         this.name = name;
         this.symbol = symbol;
         this.score = 0;
     }
 
-    // getters para makuha yung info ng player
+    // getters
     public String getName() {
         return name;
     }
@@ -29,15 +28,15 @@ public abstract class Player {
         return score;
     }
 
-    // increase score ng player
+
     public void incrementScore() {
         this.score++;
     }
 
-    // abstract method, bawat player type may sariling move logic
+    // abstract
     public abstract int[] makeMove(Board board);
 
-    // para sa printing ng player info
+
     @Override
     public String toString() {
         return name + " (" + symbol + ")";

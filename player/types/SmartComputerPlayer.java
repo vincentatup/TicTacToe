@@ -4,19 +4,17 @@ import java.util.Random;
 import game.Board;
 import player.Player;
 
-// smart computer player na may strategy sa move
-// extends Player class
+
 public class SmartComputerPlayer extends Player {
     private Random random;
 
-    // constructor, set name at symbol ng player
+ 
     public SmartComputerPlayer(String name, char symbol) {
         super(name, symbol);
         this.random = new Random();
     }
 
-    // override makeMove, gamit ang strategic moves
-    // strategy: 1. win kung puwede, 2. block opponent, 3. take center, 4. take corner, 5. random
+
     @Override
     public int[] makeMove(Board board) {
         System.out.println(getName() + " is thinking strategically...");
@@ -28,7 +26,7 @@ public class SmartComputerPlayer extends Player {
 
         int[] move;
 
-        // try to win
+        
         move = findWinningMove(board, getSymbol());
         if (move != null) {
             System.out.println(getName() + " is going for the win!");
@@ -45,13 +43,13 @@ public class SmartComputerPlayer extends Player {
             return move;
         }
 
-        // take center kung libre
+        // take center kung free
         if (board.isCellEmpty(1, 1)) {
             System.out.println(getName() + " chose: Row 2, Column 2 (Center)");
             return new int[]{1, 1};
         }
 
-        // take corner kung libre
+        // take corner kung free
         int[][] corners = {{0, 0}, {0, 2}, {2, 0}, {2, 2}};
         for (int[] corner : corners) {
             if (board.isCellEmpty(corner[0], corner[1])) {
@@ -70,17 +68,17 @@ public class SmartComputerPlayer extends Player {
             }
         }
 
-        return null; // hindi dapat ma-reach
+        return null;
     }
 
-    // hanapin kung may winning move para sa given symbol
+    
     private int[] findWinningMove(Board board, char symbol) {
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
                 if (board.isCellEmpty(i, j)) {
                     board.setCell(i, j, symbol);
                     boolean isWin = checkWinForSymbol(board, symbol);
-                    board.setCell(i, j, ' '); // undo move
+                    board.setCell(i, j, ' ');
                     if (isWin) {
                         return new int[]{i, j};
                     }
@@ -90,9 +88,9 @@ public class SmartComputerPlayer extends Player {
         return null;
     }
 
-    // check kung panalo na yung given symbol
+    
     private boolean checkWinForSymbol(Board board, char symbol) {
-        // check rows at columns
+        // check rows and columns
         for (int i = 0; i < 3; i++) {
             if ((board.getCell(i, 0) == symbol && board.getCell(i, 1) == symbol && board.getCell(i, 2) == symbol) ||
                 (board.getCell(0, i) == symbol && board.getCell(1, i) == symbol && board.getCell(2, i) == symbol)) {

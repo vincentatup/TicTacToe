@@ -8,8 +8,6 @@ import player.types.SmartComputerPlayer;
 
 import java.util.InputMismatchException;
 
-// main class at entry point ng Tic-Tac-Toe game
-// dito ginagawa yung UI at initialization ng game
 public class TicTacToeGame {
     private static Scanner scanner = new Scanner(System.in);
 
@@ -41,7 +39,7 @@ public class TicTacToeGame {
                 }
             } catch (InputMismatchException e) {
                 System.out.println("❌ Invalid input! Please enter a number.");
-                scanner.nextLine(); // clear invalid input
+                scanner.nextLine();
             } catch (Exception e) {
                 System.out.println("❌ An error occurred: " + e.getMessage());
                 scanner.nextLine();
@@ -51,7 +49,7 @@ public class TicTacToeGame {
         scanner.close();
     }
 
-    // display welcome message
+    
     private static void displayWelcome() {
         System.out.println("========================================");
         System.out.println("     TIC-TAC-TOE GAME");
@@ -59,7 +57,7 @@ public class TicTacToeGame {
         System.out.println("Welcome! Let's play Tic-Tac-Toe!\n");
     }
 
-    // display main menu at kunin choice ng user
+    
     private static int displayMenu() {
         System.out.println("Select Game Mode:");
         System.out.println("1. Human vs Human");
@@ -71,9 +69,9 @@ public class TicTacToeGame {
         return scanner.nextInt();
     }
 
-    // start Human vs Human mode
+    // Human vs Human
     private static void startHumanVsHuman() {
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
         
         System.out.println("\n--- Human vs Human Mode ---");
         System.out.print("Enter Player 1 name: ");
@@ -82,47 +80,47 @@ public class TicTacToeGame {
         System.out.print("Enter Player 2 name: ");
         String player2Name = scanner.nextLine();
         
-        // gumawa ng dalawang human players
+        
         Player player1 = new HumanPlayer(player1Name, 'X');
         Player player2 = new HumanPlayer(player2Name, 'O');
         
-        // start game
+        
         Game game = new Game(player1, player2);
         game.start();
     }
 
-    // start Human vs Computer mode
+    // Human vs Computer
     private static void startHumanVsComputer() {
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
         
         System.out.println("\n--- Human vs Computer Mode ---");
         System.out.print("Enter your name: ");
         String playerName = scanner.nextLine();
         
-        // gumawa ng human at computer player
+        
         Player player1 = new HumanPlayer(playerName, 'X');
         Player player2 = new ComputerPlayer("Computer", 'O');
         
-        // start game
+        
         Game game = new Game(player1, player2);
         game.start();
     }
 
-    // start Human vs Smart Computer mode
+    // Human vs Smart Computer
     private static void startHumanVsSmartComputer() {
-        scanner.nextLine(); // consume newline
+        scanner.nextLine();
         
         System.out.println("\n--- Human vs Smart Computer Mode ---");
         System.out.print("Enter your name: ");
         String playerName = scanner.nextLine();
         
-        // gumawa ng human at smart computer player
+        
         Player player1 = new HumanPlayer(playerName, 'X');
         Player player2 = new SmartComputerPlayer("Smart Bot", 'O');
         
         System.out.println("\n⚠️  Warning: The Smart Bot is unbeatable! Good luck! 🤖");
         
-        // start game
+        
         Game game = new Game(player1, player2);
         game.start();
     }
