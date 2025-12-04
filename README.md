@@ -135,7 +135,6 @@ Encapsulation ensures data integrity by controlling access to the internal state
 #### Benefits:
  Prevents unauthorized data manipulation  
  Maintains game state integrity  
- Enables validation logic in setters  
 
 </details>
 
