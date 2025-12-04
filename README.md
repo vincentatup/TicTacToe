@@ -209,7 +209,7 @@ Polymorphism allows the game to treat different player types uniformly while mai
 Player player1 = new HumanPlayer("Alice", 'X');
 Player player2 = new SmartComputerPlayer("Bot", 'O');
 
-// Dynamic dispatch at runtime
+
 int[] move = currentPlayer.makeMove(board);
 ```
 
