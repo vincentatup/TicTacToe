@@ -260,7 +260,7 @@ public interface GameRules {
 public class TicTacToeRules implements GameRules {
     @Override
     public char checkWinner(Board board) {
-        // Complex win-checking algorithm hidden here
+        
     }
 }
 ```
