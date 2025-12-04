@@ -181,7 +181,7 @@ public class HumanPlayer extends Player {
     
     @Override
     public int[] makeMove(Board board) {
-        // Human-specific implementation
+
     }
 }
 ```
@@ -242,7 +242,7 @@ Abstraction focuses on defining essential contracts and hiding implementation de
 **Abstract Class:**
 ```java
 public abstract class Player {
-    public abstract int[] makeMove(Board board);  // Contract
+    public abstract int[] makeMove(Board board);
 }
 ```
 
